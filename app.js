@@ -32,6 +32,16 @@ menuToggle.addEventListener("click", () => {
   mobileNav.hidden = expanded;
 });
 $$("a", mobileNav).forEach(link => link.addEventListener("click", closeMenu));
+// On the homepage, the Startseite link always returns to the hero at the top.
+// The mobile menu is already closed by its existing link click handler.
+if (document.body.classList.contains("page-home")) {
+  $$(".desktop-nav a[href='#start'], .mobile-nav a[href='#start']").forEach(link => {
+    link.addEventListener("click", event => {
+      event.preventDefault();
+      window.scrollTo({top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"});
+    });
+  });
+}
 document.addEventListener("keydown", event => {
   if (event.key === "Escape" && !mobileNav.hidden) { closeMenu(); menuToggle.focus(); }
 });
@@ -225,16 +235,50 @@ $("#edit-inquiry").addEventListener("click", () => {
 $$("#year, [data-current-year]").forEach(element => {
   element.textContent = new Date().getFullYear();
 });
-const navigationObserver = new IntersectionObserver(entries => {
-  for (const entry of entries) {
-    if (!entry.isIntersecting) continue;
-    $$(".desktop-nav a").forEach(link => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
-  }
-}, { rootMargin: "-15% 0px -65% 0px", threshold: 0 });
-["leistungen", "transport", "reinigung", "ueber-uns", "kontakt"].forEach(id => {
-  const section = document.getElementById(id);
-  if (section) navigationObserver.observe(section);
-});
+// Homepage navigation underline: highlight the section currently in view, including the contact CTA.
+// Transport and Reinigung link to other HTML pages, not to #transport or
+// #reinigung, so comparing hrefs to `#${section.id}` never matched them.
+// Use a single scroll-position calculation rather than competing IO callbacks.
+(() => {
+  if (!document.body.classList.contains("page-home")) return;
+  const targets = [
+    ["start", "#start"],
+    ["leistungen", "#start"],
+    ["transport", "transport.html"],
+    ["reinigung", "gebaeudereinigung.html"],
+    ["ueber-uns", "#ueber-uns"],
+    ["projekt-kontakt", "kontakt.html#kontakt"]
+  ].map(([id, href]) => ({ element: document.getElementById(id), href }))
+    .filter(item => item.element);
+  const links = $$(".desktop-nav a, .mobile-nav a");
+  if (!targets.length || !links.length) return;
+
+  let scheduled = false;
+  const updateActiveLink = () => {
+    scheduled = false;
+    // Anticipate the next section before its title reaches the center of the screen.
+    // The link switches while the next section is approaching from the bottom,
+    // around 78% of the viewport height, on desktop and mobile alike.
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const anticipatoryLine = viewportHeight * 0.78;
+    let href = null;
+    targets.forEach(({ element, href: candidate }) => {
+      if (element.getBoundingClientRect().top <= anticipatoryLine) href = candidate;
+    });
+    links.forEach(link => {
+      link.classList.toggle("active", href !== null && link.getAttribute("href") === href);
+    });
+  };
+  const requestUpdate = () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(updateActiveLink);
+  };
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate);
+  window.addEventListener("load", requestUpdate);
+  requestUpdate();
+})();
 
 // Direct footer links on related pages open the corresponding existing legal dialog.
 const legalRequest = new URLSearchParams(window.location.search).get("legal");

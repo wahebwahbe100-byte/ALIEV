@@ -62,3 +62,6 @@ dialog{border:0;padding:0;color:var(--ink);background:var(--cream);width:calc(10
 }
 .service-category > a.service-request-link .service-request-label{order:1;}
 .service-category > a.service-request-link svg.icon{order:2; flex:none;}
+
+/* Startseite navigation: mark the currently visible section in the mobile list. */
+.mobile-nav a.active { color:#926323; font-weight:700; border-bottom-color:#bd8a3e; }
