@@ -1,0 +1,18 @@
+
+.aliev-cookie-banner {position:fixed;z-index:15000;bottom:18px;left:18px;right:18px;width:min(550px,calc(100% - 36px));background:#fff;border:1px solid #e9e3d8;border-radius:17px;box-shadow:0 20px 70px rgba(4,33,45,.22);padding:20px 23px;color:#113144;font:400 14px/1.65 system-ui,sans-serif}
+.aliev-cookie-banner[hidden],.aliev-cookie-overlay[hidden]{display:none!important}
+.aliev-cookie-banner strong{display:block;font-size:16px;font-weight:750;margin:0 0 6px;color:#123342}
+.aliev-cookie-banner p{margin:0 0 15px;color:#586a72}
+.aliev-cookie-actions {display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.aliev-cookie-btn{appearance:none;border:1px solid #0d3445;border-radius:999px;background:#0d3445;color:#fff;padding:11px 21px;cursor:pointer;font:700 13px/1.35 system-ui,sans-serif}
+.aliev-cookie-btn:hover,.aliev-cookie-btn:focus-visible{background:#174f61}
+.aliev-cookie-btn.secondary{background:#fff;color:#0d3445;border-color:#d1c7b8}
+.aliev-cookie-actions a{font:600 13px/1.4 system-ui,sans-serif;color:#8c632b;text-decoration:underline;text-underline-offset:3px}
+.aliev-cookie-overlay{position:fixed;inset:0;z-index:15001;background:rgba(3,23,33,.65);display:flex;align-items:center;justify-content:center;padding:20px}
+.aliev-cookie-panel{position:relative;width:min(520px,100%);max-height:90dvh;overflow:auto;background:#fff;border-radius:18px;padding:27px;color:#153240;font:400 14px/1.75 system-ui,sans-serif;box-shadow:0 20px 70px rgba(0,0,0,.23)}
+.aliev-cookie-panel h2{font:500 29px/1.25 Georgia,serif;margin:0 35px 12px 0;color:#103143}
+.aliev-cookie-panel h3{font:700 16px/1.4 system-ui,sans-serif;margin:22px 0 6px;color:#103143}
+.aliev-cookie-panel p{margin:0 0 13px;color:#5b6a73}
+.aliev-cookie-panel a{color:#8d602e}
+.aliev-cookie-close{position:absolute;right:17px;top:12px;appearance:none;border:0;background:transparent;color:#183c49;font-size:28px;cursor:pointer}
+@media(max-width:550px){.aliev-cookie-banner{bottom:10px;left:10px;right:10px;width:calc(100% - 20px);padding:17px}.aliev-cookie-panel{padding:23px}}

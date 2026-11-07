@@ -1,0 +1,139 @@
+/* ALIEV · responsive review preview section (home page only) */
+.page-home .aliev-reviews {
+  padding: clamp(74px, 7.5vw, 112px) 0 clamp(76px, 7.4vw, 108px);
+  background: linear-gradient(155deg,#faf8f4 0%,#f2ede5 100%);
+  border-top: 1px solid #e7ded1;
+  color: var(--navy);
+}
+.page-home .aliev-reviews-shell { max-width: 1280px; }
+.page-home .aliev-reviews-heading {
+  display: flex; justify-content: space-between; align-items: end; gap: 64px;
+  margin-bottom: 40px;
+}
+.page-home .aliev-reviews-heading-copy { flex: 1; }
+.page-home .aliev-reviews-kicker {
+  display: flex; align-items: center; gap: 13px; margin-bottom: 22px;
+  font: 700 10px/1.4 var(--sans); letter-spacing: 2.3px; color: #916324;
+}
+.page-home .aliev-reviews-kicker-line { width: 26px; height: 1px; background: #b98b4c; flex: none; }
+.page-home .aliev-reviews-heading h2 {
+  font: 400 clamp(43px, 4.8vw, 69px)/1.09 var(--serif);
+  letter-spacing: -1.9px;
+}
+.page-home .aliev-reviews-heading h2 em { color: #ab7a38; }
+.page-home .aliev-reviews-heading-side { width: 310px; max-width: 36%; padding-bottom: 5px; }
+.page-home .aliev-reviews-heading-stars {
+  font: 28px/1.1 Georgia, serif; color: #bc8b42; letter-spacing: 5px;
+  margin-bottom: 17px; white-space: nowrap;
+}
+.page-home .aliev-reviews-heading-side p { color:#57636a; font-size:14px; line-height:1.8; }
+.page-home .aliev-reviews-viewport { overflow: hidden; width: 100%; }
+.page-home .aliev-reviews-track {
+  --review-gap: 19px;
+  display: flex; gap: var(--review-gap); align-items: stretch;
+  will-change: transform;
+}
+.page-home .aliev-reviews-track > .aliev-review-card {
+  flex: 0 0 calc((100% - 2 * var(--review-gap)) / 3);
+  min-width: 0;
+}
+.page-home .aliev-review-card {
+  display: flex; flex-direction: column; padding: 31px 30px 26px; min-height: 320px;
+  background: #fffdf9; border: 1px solid #e5d9c8; border-radius: 3px;
+  box-shadow: 0 14px 34px rgba(5, 43, 61, .045);
+  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+}
+@media (hover:hover) {
+  .page-home .aliev-review-card:hover { transform: translateY(-5px); border-color:#cbb188; box-shadow:0 20px 42px rgba(5,43,61,.09); }
+}
+.page-home .aliev-review-card-top { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom: 27px; }
+.page-home .aliev-review-stars { color: #bd8a3e; font: 22px/1 Georgia,serif; letter-spacing:3px; white-space:nowrap; }
+.page-home .aliev-review-category { font:700 10px/1.4 var(--sans); letter-spacing:1.8px; color:#9b6d32; margin-bottom:13px; }
+.page-home .aliev-review-card blockquote {
+  margin: 0 0 29px; font: 400 clamp(17px, 1.4vw, 21px)/1.6 var(--serif);
+  letter-spacing:-.16px; color:#1d3745; flex:1;
+}
+.page-home .aliev-review-card-bottom { display:flex; align-items:center; gap:12px; border-top:1px solid #eee5da; padding-top:19px; }
+.page-home .aliev-review-avatar {
+  display:flex; align-items:center; justify-content:center;
+  flex:0 0 38px; height:38px; background:#efe7d9; border:1px solid #d5c2a6;
+  border-radius:50%; color:#8d6839; font:400 18px var(--serif);
+}
+.page-home .aliev-review-card-bottom strong { display:block; font:700 11px/1.5 var(--sans); color:#233d4b; }
+.page-home .aliev-review-card-bottom small { display:block; font:400 11px/1.55 var(--sans); color:#69747a; }
+.page-home .aliev-review-quote { margin-left:auto; align-self:center; color:#d4ba93; font:50px/.5 var(--serif); transform:translateY(5px); }
+.page-home .aliev-reviews-disclaimer {
+  margin-top:22px; max-width:1000px; color:#687278;
+  font:400 11px/1.75 var(--sans); letter-spacing:.08px;
+}
+.page-home .aliev-reviews-disclaimer span { color:#af8346; padding-right:5px; }
+@media (max-width:1080px) {
+  .page-home .aliev-reviews-heading {gap:30px;}
+  .page-home .aliev-review-card {padding:26px 22px 23px; min-height:325px;}
+  .page-home .aliev-reviews-track {--review-gap: 13px;}
+  .page-home .aliev-review-stars {font-size:20px;letter-spacing:2px;}
+}
+@media (max-width:800px) {
+  .page-home .aliev-reviews-heading {align-items:start; gap:20px;}
+  .page-home .aliev-reviews-heading-side {width:235px; max-width:40%;}
+  .page-home .aliev-reviews-track {--review-gap: 16px;}
+  .page-home .aliev-reviews-track > .aliev-review-card {flex-basis:calc((100% - var(--review-gap)) / 2);}
+  .page-home .aliev-review-card {min-height:285px;}
+}
+@media (max-width:700px) {
+  .page-home .aliev-reviews {padding:59px 0 66px;}
+  .page-home .aliev-reviews-heading {display:block;margin-bottom:28px;}
+  .page-home .aliev-reviews-kicker {font-size:9px;letter-spacing:1.65px;margin-bottom:16px;}
+  .page-home .aliev-reviews-heading h2 {font-size:clamp(40px,9vw,52px);letter-spacing:-1.2px;}
+  .page-home .aliev-reviews-heading-side {max-width:none;width:auto;margin-top:21px;padding:0;}
+  .page-home .aliev-reviews-heading-stars {font-size:23px;letter-spacing:4px;margin-bottom:8px;}
+  .page-home .aliev-reviews-heading-side p {font-size:13px;line-height:1.7;max-width:450px;}
+  /* Two reviews stay visible side by side on phones, down to 320px. */
+  .page-home .aliev-reviews-track {--review-gap:10px;}
+  .page-home .aliev-reviews-track > .aliev-review-card {flex-basis:calc((100% - var(--review-gap)) / 2);}
+  .page-home .aliev-review-card {min-height:0;padding:19px 13px 17px;overflow-wrap:break-word;}
+  .page-home .aliev-review-card-top {margin-bottom:13px;}
+  .page-home .aliev-review-stars {font-size:clamp(12px,3.5vw,17px);letter-spacing:1px;}
+  .page-home .aliev-review-category {font-size:8px;line-height:1.45;letter-spacing:.65px;margin-bottom:9px;}
+  .page-home .aliev-review-card blockquote {font-size:clamp(13px,3.55vw,16px);line-height:1.48;margin-bottom:18px;}
+  .page-home .aliev-review-card-bottom {gap:7px;padding-top:13px;min-width:0;}
+  .page-home .aliev-review-avatar {flex-basis:27px;height:27px;font-size:14px;}
+  .page-home .aliev-review-card-bottom span:nth-child(2) {min-width:0;overflow-wrap:anywhere;}
+  .page-home .aliev-review-card-bottom strong {font-size:9px;line-height:1.35;}
+  .page-home .aliev-review-card-bottom small {font-size:9px;line-height:1.35;}
+  .page-home .aliev-review-quote {display:none;}
+  .page-home .aliev-reviews-disclaimer {font-size:11px;margin-top:20px;}
+}
+@media (prefers-reduced-motion:reduce) {
+  .page-home .aliev-review-card {transition:none;}
+  .page-home .aliev-review-card:hover {transform:none;}
+}
+
+/* Review carousel controls – matching navy and gold palette. */
+.page-home .aliev-reviews-controls {
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  margin-top:22px;
+}
+.page-home .aliev-reviews-controls-hint {
+  color:#637078; font:500 12px/1.5 var(--sans); letter-spacing:.12px;
+}
+.page-home .aliev-reviews-buttons {display:flex;gap:10px;flex:0 0 auto;}
+.page-home .aliev-reviews-arrow {
+  display:inline-flex;align-items:center;justify-content:center;
+  width:49px;height:45px;padding:0;border:1px solid #c8b697;
+  border-radius:6px;background:#fffdf9;color:#0a3143;cursor:pointer;
+  transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease;
+}
+.page-home .aliev-reviews-arrow svg {height:21px;width:21px;}
+.page-home .aliev-reviews-arrow:hover {background:#0b3446;color:#f4d69e;border-color:#0b3446;transform:translateY(-2px);}
+.page-home .aliev-reviews-arrow:focus-visible {outline:3px solid #b88c50;outline-offset:3px;}
+@media(max-width:700px) {
+  .page-home .aliev-reviews-controls {margin-top:17px;gap:10px;}
+  .page-home .aliev-reviews-controls-hint {font-size:11px;max-width:180px;}
+  .page-home .aliev-reviews-arrow {width:46px;height:43px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .page-home .aliev-reviews-track {will-change:auto;transition:none!important;}
+  .page-home .aliev-reviews-arrow {transition:none;}
+  .page-home .aliev-reviews-arrow:hover {transform:none;}
+}

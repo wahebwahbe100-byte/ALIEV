@@ -1,0 +1,63 @@
+/* ALIEV logo integration (the complete user-supplied artwork) — applies to all pages. */
+/* Header logos in both homepage and inner-page navigation. */
+.site-header .brand img.brand-mark,
+.site-header.aliev-match-header .brand img.brand-mark,
+.aliev-index-sticky-header .aliev-nav-brand img,
+.aliev-nav-brand > img,
+a.brand > img.brand-mark {
+  width: 65px !important;
+  height: 48px !important;
+  min-width: 0 !important;
+  flex: 0 0 65px !important;
+  max-width: 65px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  filter: none !important;
+}
+/* Footer is dark navy; a subtle neutral backing keeps both navy and gold visible. */
+.aliev-footer-redesign .aliev-footer-brand img,
+.aliev-simple-footer .aliev-footer-brand img {
+  width: 72px !important;
+  height: 57px !important;
+  flex: 0 0 72px !important;
+  max-width: 72px !important;
+  object-fit: contain !important;
+  background: #f7f4ed !important;
+  padding: 4px !important;
+  border-radius: 7px !important;
+  box-sizing: border-box !important;
+  filter: none !important;
+}
+@media (max-width: 700px) {
+  .site-header .brand img.brand-mark,
+  .site-header.aliev-match-header .brand img.brand-mark,
+  .aliev-index-sticky-header .aliev-nav-brand img,
+  .aliev-nav-brand > img,
+  a.brand > img.brand-mark {
+    width: 52px !important;
+    height: 39px !important;
+    max-width: 52px !important;
+    flex-basis: 52px !important;
+  }
+  .aliev-footer-redesign .aliev-footer-brand img,
+  .aliev-simple-footer .aliev-footer-brand img {
+    width: 61px !important;
+    height: 49px !important;
+    max-width: 61px !important;
+    flex-basis: 61px !important;
+    padding: 3px !important;
+  }
+}
+@media (max-width: 380px) {
+  .site-header .brand img.brand-mark,
+  .site-header.aliev-match-header .brand img.brand-mark,
+  .aliev-index-sticky-header .aliev-nav-brand img,
+  .aliev-nav-brand > img,
+  a.brand > img.brand-mark {
+    width: 47px !important;
+    height: 35px !important;
+    max-width: 47px !important;
+    flex-basis: 47px !important;
+  }
+}

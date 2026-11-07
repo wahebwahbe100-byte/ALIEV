@@ -1,0 +1,29 @@
+/* Transport uses the cleaning page's component styles and responsive layout. */
+.transport-page .aliev-text-hero-media::after {
+  background: linear-gradient(90deg, #fbf9f5 0%, rgb(251 249 245 / 96%) 24%, rgb(251 249 245 / 83%) 43%, rgb(251 249 245 / 28%) 67%, transparent 85%);
+}
+.transport-page .aliev-text-hero-media img { object-position: 68% 57%; }
+.transport-page .aliev-text-hero .aliev-text-hero-copy { max-width: 620px; }
+.transport-page #objekttypen .object-card h3 { white-space: normal; letter-spacing: .14em; }
+.transport-page #objekttypen .object-card:focus-visible { outline: 3px solid #ddb66f; outline-offset: -4px; }
+.transport-table-note { display: inline-block; font: 600 clamp(10px, 1vw, 14px)/1.5 Arial, sans-serif; color: #52616c; }
+.transport-page .mn-services-viewport:not(.is-enhanced) { overflow-x: auto !important; }
+.transport-page .mn-services-viewport.is-enhanced { overflow: hidden; }
+.transport-page .mn-service-card:focus-visible { outline: 3px solid #ddb66f; outline-offset: -3px; }
+.transport-page .other-services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.transport-page a, .transport-detail-page a { -webkit-tap-highlight-color: transparent; }
+.transport-detail-page { padding-top: 94px; }
+.transport-detail-page .hero .hero-inner h1 { overflow-wrap: normal; hyphens: none; }
+.transport-detail-page .service-card { text-decoration: none; color: inherit; }
+.transport-detail-page .service-card:hover { border-color: #bd8a3e; }
+.transport-detail-page a:focus-visible { outline: 2px solid #bd8a3e; outline-offset: 4px; }
+@media (max-width: 980px) { .transport-detail-page { padding-top: 82px; } }
+@media (max-width: 700px) {
+  .transport-detail-page { padding-top: 75px; }
+  .transport-page .aliev-text-hero-media img { object-position: 76% 60%; }
+  .transport-page .other-services-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 420px) {
+  .transport-page .aliev-nav-cta svg, .transport-detail-page .aliev-nav-cta svg { display: none; }
+  .transport-page .aliev-nav-container, .transport-detail-page .aliev-nav-container { gap: 8px; }
+}

@@ -1,0 +1,188 @@
+/* ÜBER ALIEV — same visual identity, new two-column structure inspired by
+   the supplied example: story / call-to-action left, three icon rows right. */
+.about-section {
+  background: var(--navy-dark);
+  color: var(--paper);
+  padding-block: 62px 66px;
+}
+
+/* Keep ALIEV's original navy-and-gold identity and the aligned horizontal
+   margins from the reference. Compact vertical rhythm prevents oversizing. */
+.about-panel.section-shell {
+  box-sizing: border-box;
+  max-width: 1600px;
+  width: calc(100% - 15.2vw);
+  padding-right: clamp(0px, 2.75vw, 52px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, .73fr) minmax(0, 1fr);
+  align-items: start;
+  column-gap: clamp(42px, 4.05vw, 76px);
+}
+
+.about-copy {
+  min-width: 0;
+}
+
+.about-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 0 19px;
+  color: var(--gold-light);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+}
+
+.about-eyebrow::before {
+  content: "";
+  flex: 0 0 39px;
+  height: 2px;
+  background: var(--gold);
+}
+
+.about-copy h2 {
+  margin: 0 0 20px;
+  font-family: var(--serif);
+  font-size: clamp(46px, 3.55vw, 60px);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -1.8px;
+  color: #fff;
+}
+
+.about-copy > p:not(.about-eyebrow) {
+  max-width: 460px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #d3dce1;
+}
+
+.about-copy > .about-detail {
+  margin-top: 10px;
+  color: #abbcc6;
+  font-size: 13px;
+}
+
+.about-cta.button {
+  margin-top: 23px;
+  min-height: 50px;
+  padding: 11px 20px;
+  border: 1px solid rgba(221,182,111,.72);
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  gap: 28px;
+}
+
+.about-cta.button:hover {
+  background: rgba(221,182,111,.12);
+}
+
+.about-cta .icon {
+  color: var(--gold-light);
+}
+
+.about-values {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.about-values li {
+  display: grid;
+  grid-template-columns: 48px minmax(0,1fr);
+  column-gap: 30px;
+  padding: 17px 0 18px;
+  min-height: 108px;
+  border-bottom: 1px solid rgba(218,231,239,.2);
+}
+
+.about-values li:first-child {
+  min-height: 105px;
+  padding-top: 2px;
+}
+
+.about-values li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-value-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 4px;
+  color: var(--gold-light);
+}
+
+.about-value-icon .icon {
+  width: 34px;
+  height: 34px;
+  stroke-width: 1.35;
+}
+
+.about-value-content h3 {
+  font-family: var(--sans);
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(19px, 1.55vw, 23px);
+  line-height: 1.35;
+  letter-spacing: -.45px;
+  margin: 0 0 7px;
+}
+
+.about-value-content p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #c7d1d8;
+  max-width: 47ch;
+  margin: 0;
+}
+
+@media (max-width: 1100px) and (min-width: 951px) {
+  .about-section { padding-block: 57px 61px; }
+  .about-panel.section-shell {
+    width: calc(100% - 9vw);
+    padding-right: 0;
+    grid-template-columns: minmax(0, .87fr) minmax(0, 1fr);
+    column-gap: 42px;
+  }
+}
+
+@media (max-width: 950px) {
+  .about-panel.section-shell { grid-template-columns: 1fr; row-gap: 48px; width: calc(100% - 9vw); padding-right: 0; }
+  .about-section { padding-block: 58px 62px; }
+  .about-copy h2 { font-size: clamp(46px, 7vw, 65px); }
+  .about-copy > p:not(.about-eyebrow) { max-width: 640px; }
+  .about-values li { grid-template-columns: 46px minmax(0,1fr); min-height: 0; }
+  .about-values li:first-child { min-height: 0; }
+}
+
+@media (max-width: 700px) {
+  .about-section { padding-block: 41px 47px; }
+  .about-panel.section-shell { width: calc(100% - 40px); row-gap: 29px; }
+  .about-eyebrow { margin-bottom: 18px; font-size: 9px; gap: 13px; }
+  .about-eyebrow::before { flex-basis: 30px; }
+  .about-copy h2 { font-size: clamp(38px, 9vw, 49px); letter-spacing: -1.25px; margin-bottom: 18px; }
+  .about-copy > p:not(.about-eyebrow) { font-size: 14px; line-height: 1.65; }
+  .about-copy > .about-detail { font-size: 13px; }
+  .about-cta.button { width: 100%; justify-content: space-between; min-height: 50px; margin-top: 19px; }
+  .about-values li, .about-values li:first-child { min-height: 0; grid-template-columns: 36px minmax(0,1fr); column-gap: 20px; padding: 18px 0; }
+  .about-values li:first-child { padding-top: 2px; }
+  .about-value-icon .icon { width: 28px; height: 28px; }
+  .about-value-content h3 { font-size: 19px; margin-bottom: 7px; }
+  .about-value-content p { font-size: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-cta.button, .about-cta .icon { transition: none; }
+}
+
+/* Desktop: gently shift whole compact About composition to the right. */
+@media (min-width: 951px) {
+  .about-panel.section-shell { position: relative; left: clamp(14px, 1.2vw, 22px); }
+}

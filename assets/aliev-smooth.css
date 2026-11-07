@@ -1,0 +1,92 @@
+/* ALIEV — motion matched to the provided BABIN BAU motion.css:
+   cubic-bezier(.22,1,.36,1), slight offset, row-by-row stagger, one reveal.
+   Pure progressive enhancement: without JS everything remains visible. */
+:root { --aliev-ease: cubic-bezier(.22, 1, .36, 1); }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+main section[id], main article[id] { scroll-margin-top: 96px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html.aliev-motion-prep .aliev-reveal {
+    opacity: 0;
+    transform: translate3d(0, 34px, 0);
+    transition: none !important;
+  }
+  html.aliev-motion-prep .aliev-reveal-left { transform: translate3d(-32px, 12px, 0); }
+  html.aliev-motion-prep .aliev-reveal-right { transform: translate3d(32px, 12px, 0); }
+  html.aliev-motion-ready .aliev-reveal {
+    opacity: 0;
+    transform: translate3d(0, 34px, 0);
+    transition-property: opacity, transform;
+    transition-duration: 1050ms, 1100ms;
+    transition-timing-function: var(--aliev-ease);
+    transition-delay: var(--aliev-reveal-delay, 0ms);
+    backface-visibility: hidden;
+  }
+  html.aliev-motion-ready .aliev-reveal-left { transform: translate3d(-32px, 12px, 0); }
+  html.aliev-motion-ready .aliev-reveal-right { transform: translate3d(32px, 12px, 0); }
+  html.aliev-motion-ready .aliev-reveal.is-revealed,
+  html.aliev-motion-ready .aliev-reveal-left.is-revealed,
+  html.aliev-motion-ready .aliev-reveal-right.is-revealed {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  html.aliev-motion-ready .page-home .process-steps > li.aliev-reveal {
+    transition-duration: 1400ms, 1500ms;
+  }
+  /* Avoid a whole-page fade on the service overviews; animate content, not the document. */
+  body.service-detail-page { animation: none !important; }
+  /* Hover effects must still work after a reveal. */
+  @media (hover: hover) and (pointer: fine) {
+    html.aliev-motion-ready .service-card.aliev-reveal.is-revealed:hover,
+    html.aliev-motion-ready .object-card.aliev-reveal.is-revealed:hover {
+      transform: translate3d(0, -5px, 0);
+    }
+    html.aliev-motion-ready .longform-card.aliev-reveal.is-revealed:hover { transform: translate3d(0, -9px, 0); }
+    :where(.button,.text-link,.header-cta,.project-cta-button,.aliev-btn,.aliev-cta) {
+      transition-timing-function: var(--aliev-ease);
+    }
+  }
+  :where(.site-header, .aliev-index-sticky-header) {
+    transition: box-shadow 300ms var(--aliev-ease);
+  }
+  :where(.site-header, .aliev-index-sticky-header).aliev-has-scrolled {
+    box-shadow: 0 6px 19px rgb(0 25 38 / 9%);
+  }
+}
+:where(a,button,summary,input,textarea,select):focus-visible {
+  outline: 2px solid var(--gold, #bd8a3e);
+  outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  html { scroll-padding-top: 84px; }
+  main section[id], main article[id] { scroll-margin-top: 84px; }
+  @media (prefers-reduced-motion: no-preference) {
+    html.aliev-motion-prep .aliev-reveal-left { transform: translate3d(-10px, 8px, 0); }
+    html.aliev-motion-prep .aliev-reveal-right { transform: translate3d(10px, 8px, 0); }
+    html.aliev-motion-prep .aliev-reveal:not(.aliev-reveal-left):not(.aliev-reveal-right) { transform: translate3d(0, 22px, 0); }
+    html.aliev-motion-ready .aliev-reveal {
+      transition-duration: 820ms, 900ms;
+    }
+    html.aliev-motion-ready .aliev-reveal:not(.is-revealed) {
+      transform: translate3d(0, 22px, 0);
+    }
+    html.aliev-motion-ready .aliev-reveal-left:not(.is-revealed) {
+      transform: translate3d(-10px, 8px, 0);
+    }
+    html.aliev-motion-ready .aliev-reveal-right:not(.is-revealed) {
+      transform: translate3d(10px, 8px, 0);
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .aliev-reveal, .aliev-reveal.is-revealed {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+@media print {
+  .aliev-reveal { opacity: 1 !important; transform: none !important; animation: none !important; }
+}

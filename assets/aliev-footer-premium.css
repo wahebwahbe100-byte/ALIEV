@@ -1,0 +1,187 @@
+/* ALIEV premium footer — November 2026.
+   Keeps the original logo in the header. The footer-specific logo is contrast-optimized
+   for navy and needs no white badge. */
+footer.aliev-simple-footer.aliev-footer-redesign {
+  background: radial-gradient(ellipse 45% 80% at 7% 10%, rgba(30,80,103,.38),transparent 90%),
+              linear-gradient(110deg,#082b3d 0%,#052536 55%,#031b29 100%) !important;
+  border-top: 1px solid #c2a16a !important;
+  color: #f2f4f2;
+}
+.aliev-footer-redesign .aliev-footer-shell {
+  width: min(calc(100% - 72px), 1240px);
+}
+.aliev-footer-redesign .aliev-footer-topline {
+  padding: 30px 0 34px;
+  gap: 20px;
+  color: #d4b580;
+  letter-spacing: .19em;
+  font-size: 9px;
+  font-weight: 600;
+}
+.aliev-footer-redesign .aliev-footer-topline-rule {
+  height: 1px;
+  background: linear-gradient(90deg,rgba(213,177,111,.4),rgba(213,177,111,.12));
+}
+.aliev-footer-redesign .aliev-footer-layout {
+  grid-template-columns: minmax(235px,1.38fr) minmax(140px,.77fr) minmax(160px,.95fr) minmax(210px,1.06fr);
+  column-gap: clamp(24px,3.6vw,64px);
+  padding-bottom: 50px;
+}
+.aliev-footer-redesign .aliev-footer-brand {
+  gap: 11px;
+  border-radius: 5px;
+  min-height: 74px;
+  max-width: max-content;
+  isolation: isolate;
+}
+/* No white block, frame, padding, or colored panel behind the mark */
+.aliev-footer-redesign .aliev-footer-brand img,
+.aliev-simple-footer .aliev-footer-brand img {
+  width: 94px !important;
+  height: 72px !important;
+  max-width: 94px !important;
+  flex: 0 0 94px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+  display: block;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.12)) !important;
+}
+.aliev-footer-redesign .aliev-footer-brand-text {
+  padding-left: 15px;
+  border-left: 1px solid rgba(218,181,110,.55);
+  gap: 7px;
+}
+.aliev-footer-redesign .aliev-footer-brand-text strong {
+  font-size: clamp(28px,2.2vw,32px);
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: .12em;
+  color: #faf9f6;
+  line-height: 1;
+}
+.aliev-footer-redesign .aliev-footer-brand-text small {
+  color: #e4c58c;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: .18em;
+}
+.aliev-footer-redesign .aliev-footer-intro p {
+  max-width: 330px;
+  margin: 16px 0 15px;
+  color: #bbced4;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.aliev-footer-redesign .aliev-footer-text-link {
+  color: #ead09d;
+  font-weight: 600;
+  font-size: 12px;
+  gap: 8px;
+  transition: color .24s ease;
+}
+.aliev-footer-redesign .aliev-footer-text-link:hover { color: #fff; }
+.aliev-footer-redesign .aliev-footer-column { gap: 12px; }
+.aliev-footer-redesign .aliev-footer-column h2,
+.aliev-footer-redesign .aliev-footer-contact h2 {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: .09em !important;
+  color: #ecc98a;
+  line-height: 1.5 !important;
+  margin: 6px 0 14px !important;
+}
+.aliev-footer-redesign .aliev-footer-links a {
+  color: #d7e2e5;
+  font-size: 13px;
+  line-height: 1.65;
+  transition: color .24s ease, transform .24s ease;
+}
+.aliev-footer-redesign .aliev-footer-links a:hover {
+  color: #f1d5a0;
+  transform: translateX(3px);
+}
+.aliev-footer-redesign .aliev-footer-contact p {
+  color: #bdd0d5;
+  font-size: 13px;
+  line-height: 1.78;
+  margin-bottom: 20px;
+}
+.aliev-footer-redesign .aliev-footer-cta {
+  border: 1px solid #c49a59;
+  background: linear-gradient(135deg,#dbb472 0%,#c3924b 100%);
+  color: #061e2c !important;
+  border-radius: 5px;
+  min-height: 50px;
+  padding-inline: 17px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  transition: background .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+.aliev-footer-redesign .aliev-footer-cta:hover {
+  background: linear-gradient(135deg,#e8c992,#d8a55d);
+  box-shadow: 0 7px 24px rgba(1,13,25,.21);
+  transform: translateY(-2px);
+}
+.aliev-footer-redesign .aliev-footer-bottom {
+  padding: 21px 0 26px;
+  border-top: 1px solid rgba(215,190,147,.2);
+  color: #9db4bc;
+}
+.aliev-footer-redesign .aliev-footer-legal a { color: #bacbd1; }
+@media(max-width:1050px) {
+  .aliev-footer-redesign .aliev-footer-layout {
+    grid-template-columns: minmax(210px,1.15fr) minmax(170px,1fr);
+    row-gap: 32px;
+  }
+}
+@media(max-width:650px) {
+  .aliev-footer-redesign .aliev-footer-shell { width: calc(100% - 40px); }
+  .aliev-footer-redesign .aliev-footer-topline {
+    padding: 25px 0 27px; font-size: 9px; gap: 13px;
+  }
+  .aliev-footer-redesign .aliev-footer-layout {
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    column-gap: 19px; row-gap: 28px;
+    padding-bottom: 31px;
+  }
+  .aliev-footer-redesign .aliev-footer-intro,
+  .aliev-footer-redesign .aliev-footer-contact { grid-column: 1/-1; }
+  .aliev-footer-redesign .aliev-footer-brand { gap: 9px; min-height: 63px; }
+  .aliev-footer-redesign .aliev-footer-brand img,
+  .aliev-simple-footer .aliev-footer-brand img {
+    width: 78px !important;
+    height: 60px !important;
+    max-width: 78px !important;
+    flex: 0 0 78px !important;
+    padding: 0 !important;
+  }
+  .aliev-footer-redesign .aliev-footer-brand-text { padding-left: 13px; gap: 5px; }
+  .aliev-footer-redesign .aliev-footer-brand-text strong { font-size: 28px; }
+  .aliev-footer-redesign .aliev-footer-brand-text small { font-size: 8px; }
+  .aliev-footer-redesign .aliev-footer-intro p { margin-top: 17px; }
+  .aliev-footer-redesign .aliev-footer-contact {
+    border-top: 1px solid rgba(216,184,119,.2);
+    padding-top: 22px;
+  }
+  .aliev-footer-redesign .aliev-footer-contact h2 { margin-top: 0 !important; }
+  .aliev-footer-redesign .aliev-footer-cta { max-width: 360px; }
+  .aliev-footer-redesign .aliev-footer-bottom {
+    padding: 19px 0 25px;
+    gap: 14px;
+  }
+}
+@media(max-width:360px) {
+  .aliev-footer-redesign .aliev-footer-brand img,
+  .aliev-simple-footer .aliev-footer-brand img {
+    width: 68px !important; max-width: 68px !important;
+    flex: 0 0 68px !important; height: 55px !important;
+  }
+  .aliev-footer-redesign .aliev-footer-brand-text strong { font-size: 25px; }
+  .aliev-footer-redesign .aliev-footer-brand-text small { font-size: 7px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .aliev-footer-redesign .aliev-footer-links a,
+  .aliev-footer-redesign .aliev-footer-cta { transition: none !important; transform: none !important; }
+}
