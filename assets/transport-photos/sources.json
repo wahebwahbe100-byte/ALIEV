@@ -1,0 +1,62 @@
+{
+  "retrieved_on": "2026-11-06",
+  "provider": "Pexels",
+  "license": "https://www.pexels.com/license/",
+  "usage": "Illustrative stock photography for the six transport service gallery cards; not photographs of ALIEV staff or customer projects.",
+  "images": {
+    "umzuege": {
+      "file": "umzug-6169675.webp",
+      "small_file": "umzug-6169675-1000.webp",
+      "source_url": "https://www.pexels.com/photo/delivery-man-pushing-a-trolley-with-carton-boxes-6169675/",
+      "download_url": "https://images.pexels.com/photos/6169675/pexels-photo-6169675.jpeg?auto=compress&cs=srgb&w=2000",
+      "photographer": "Tima Miroshnichenko",
+      "alt": "Helfer mit Umzugskartons am geöffneten Transporter",
+      "position": "50% 44%"
+    },
+    "moebeltransport": {
+      "file": "moebeltransport-7464662.webp",
+      "small_file": "moebeltransport-7464662-1000.webp",
+      "source_url": "https://www.pexels.com/photo/close-up-shot-of-men-carrying-a-couch-7464662/",
+      "download_url": "https://images.pexels.com/photos/7464662/pexels-photo-7464662.jpeg?auto=compress&cs=srgb&w=2000",
+      "photographer": "RDNE Stock project",
+      "alt": "Zwei Männer tragen gemeinsam ein grünes Sofa durch einen hellen Raum",
+      "position": "50% 48%"
+    },
+    "kurierfahrten": {
+      "file": "kurierfahrt-6699405.webp",
+      "small_file": "kurierfahrt-6699405-1000.webp",
+      "source_url": "https://www.pexels.com/photo/a-deliveryman-holding-a-cardboard-box-6699405/",
+      "download_url": "https://images.pexels.com/photos/6699405/pexels-photo-6699405.jpeg?auto=compress&cs=srgb&w=2000",
+      "photographer": "Gustavo Fring",
+      "alt": "Kurier übergibt ein Paket an eine Kundin vor dem Haus",
+      "position": "50% 82%"
+    },
+    "verpackungsservice": {
+      "file": "verpackung-4247756.webp",
+      "small_file": "verpackung-4247756-1000.webp",
+      "source_url": "https://www.pexels.com/photo/pleasant-woman-preparing-stuff-for-moving-4247756/",
+      "download_url": "https://images.pexels.com/photos/4247756/pexels-photo-4247756.jpeg?auto=compress&cs=srgb&w=2000",
+      "photographer": "Ketut Subiyanto",
+      "alt": "Frau beschriftet einen gepackten Umzugskarton im Wohnzimmer",
+      "position": "50% 95%"
+    },
+    "moebelmontage": {
+      "file": "moebelmontage-5217124.webp",
+      "small_file": "moebelmontage-5217124-1000.webp",
+      "source_url": "https://www.pexels.com/photo/unrecognizable-man-hands-assembling-baby-cot-5217124/",
+      "download_url": "https://images.pexels.com/photos/5217124/pexels-photo-5217124.jpeg?auto=compress&cs=srgb&w=2000",
+      "photographer": "Yan Krukau",
+      "alt": "Hände ziehen mit einem Inbusschlüssel eine Schraube an einem Holzmöbel fest",
+      "position": "50% 50%"
+    },
+    "entruempelung": {
+      "file": "entruempelung-8581413.webp",
+      "small_file": "entruempelung-8581413-1000.webp",
+      "source_url": "https://www.pexels.com/photo/boxes-used-for-segregating-things-at-home-8581413/",
+      "download_url": "https://images.pexels.com/photos/8581413/pexels-photo-8581413.jpeg?auto=compress&cs=srgb&w=2000",
+      "photographer": "RDNE Stock project",
+      "alt": "Kartons mit aussortierten Gegenständen zum Behalten, Spenden und Entsorgen",
+      "position": "50% 86%"
+    }
+  }
+}
