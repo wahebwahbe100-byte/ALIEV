@@ -1,0 +1,250 @@
+/* Unified ALIEV navigation: one visual system, all 38 site pages. */
+.site-header.aliev-unified-nav,
+.site-header.aliev-unified-nav *,
+.site-header.aliev-unified-nav *::before,
+.site-header.aliev-unified-nav *::after {box-sizing:border-box}
+.site-header.aliev-unified-nav {
+  height:94px!important; min-height:0!important;
+  position:fixed!important; top:0!important;left:0!important;right:0!important;
+  width:100%!important; z-index:3000!important;display:block!important;
+  padding:0!important;margin:0!important;
+  background:rgba(250,247,241,.98)!important;border:0!important;
+  border-bottom:1px solid #e9e1d7!important;box-shadow:none!important;
+  backdrop-filter:none!important;transform:none!important;animation:none!important;
+  color:#052b3d!important;font-family:Arial,Helvetica,sans-serif!important;
+  font-size:15px!important;line-height:1.65!important;
+}
+.site-header.aliev-unified-nav.aliev-index-home {position:sticky!important}
+.site-header.aliev-unified-nav a {text-decoration:none!important;color:inherit;}
+.site-header.aliev-unified-nav .header-inner {
+  max-width:1440px!important;width:calc(100% - 80px)!important;
+  height:100%!important;min-height:0!important;margin:0 auto!important;
+  display:flex!important;align-items:center!important;justify-content:space-between!important;
+  gap:26px!important;padding:0!important;background:transparent!important;
+}
+.site-header.aliev-unified-nav .brand {
+  display:flex!important;align-items:center!important;gap:14px!important;
+  flex:0 0 auto!important;padding:0!important;margin:0!important;
+  min-width:0!important;max-width:none!important;background:transparent!important;
+  border:0!important;box-shadow:none!important;
+}
+.site-header.aliev-unified-nav .brand img.brand-mark {
+  display:block!important;width:57px!important;height:42px!important;
+  max-width:57px!important;min-width:0!important;flex:0 0 57px!important;
+  object-fit:contain!important;margin:0!important;padding:0!important;
+  border:0!important;border-radius:0!important;background:transparent!important;
+}
+.site-header.aliev-unified-nav .brand-wordmark {
+  border:0!important;border-left:1px solid #b8a98e!important;
+  padding:0 0 0 14px!important;margin:0!important;gap:0!important;
+  display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+  min-width:0!important;max-width:none!important;white-space:nowrap!important;
+}
+.site-header.aliev-unified-nav .brand-wordmark strong {
+  display:block!important;font-family:Georgia,'Times New Roman',serif!important;
+  color:#052b3d!important;font-weight:400!important;font-style:normal!important;
+  font-size:27px!important;line-height:1!important;letter-spacing:3px!important;
+  margin:0!important;padding:0!important;
+}
+.site-header.aliev-unified-nav .brand-wordmark>span {
+  display:block!important;font:700 7.6px/1.6 Arial,Helvetica,sans-serif!important;
+  color:#052b3d!important;letter-spacing:1.6px!important;
+  margin:5px 0 0!important;padding:0!important;white-space:nowrap!important;
+}
+.site-header.aliev-unified-nav .desktop-nav {
+  display:flex!important;align-items:center!important;flex-flow:row nowrap!important;
+  margin:0 0 0 auto!important;gap:26px!important;
+  min-width:0!important;padding:0!important;position:static!important;
+  background:transparent!important;border:0!important;box-shadow:none!important;
+}
+.site-header.aliev-unified-nav .desktop-nav a {
+  position:relative!important;display:inline-block!important;flex:none!important;
+  background:transparent!important;border:0!important;
+  margin:0!important;padding:0!important;white-space:nowrap!important;
+  color:#052b3d!important;font:600 11px/1.65 Arial,Helvetica,sans-serif!important;
+  letter-spacing:normal!important;text-transform:none!important;text-decoration:none!important;
+}
+.site-header.aliev-unified-nav .desktop-nav a::after {
+  content:''!important;position:absolute!important;left:0!important;right:100%;
+  bottom:-7px!important;top:auto!important;width:auto!important;height:1px!important;
+  border:0!important;background:#bd8a3e!important;opacity:1!important;
+  transform:none!important;transition:right .2s ease!important;
+}
+.site-header.aliev-unified-nav .desktop-nav a.active::after,
+.site-header.aliev-unified-nav .desktop-nav a:hover::after {right:0!important}
+.site-header.aliev-unified-nav .header-cta {
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  flex:none!important;white-space:nowrap!important;gap:13px!important;
+  margin:0!important;min-height:41px!important;height:auto!important;
+  padding:10px 16px!important;line-height:1.4!important;
+  background:#052b3d!important;color:#fbf9f5!important;
+  border:1px solid #bd8a3e!important;border-radius:0!important;
+  box-shadow:none!important;transform:none!important;
+  font:600 11px/1.4 Arial,Helvetica,sans-serif!important;letter-spacing:normal!important;
+  transition:background .2s ease!important;
+}
+.site-header.aliev-unified-nav .header-cta:hover {background:#124053!important}
+.site-header.aliev-unified-nav .header-cta svg {
+  display:block!important;width:18px!important;height:18px!important;
+  flex:0 0 18px!important;stroke:#bd8a3e!important;
+  stroke-width:1.5!important;fill:none!important;stroke-linecap:round!important;
+  stroke-linejoin:round!important;transform:none!important;
+}
+.site-header.aliev-unified-nav .menu-toggle {
+  display:none!important;flex:0 0 auto!important;position:relative!important;
+  height:44px!important;width:44px!important;min-height:0!important;
+  padding:10px!important;margin:0!important;border:0!important;
+  border-radius:0!important;background:transparent!important;color:#052b3d!important;
+  box-shadow:none!important;transform:none!important;cursor:pointer!important;
+}
+.site-header.aliev-unified-nav .menu-toggle span {
+  display:block!important;position:relative!important;height:1px!important;
+  width:100%!important;min-width:0!important;margin:7px 0!important;padding:0!important;
+  background:#052b3d!important;border:0!important;border-radius:0!important;
+  transition:transform .2s ease!important;
+}
+.site-header.aliev-unified-nav .menu-toggle[aria-expanded='true'] span:first-child {transform:translateY(4px) rotate(45deg)!important}
+.site-header.aliev-unified-nav .menu-toggle[aria-expanded='true'] span:last-child {transform:translateY(-4px) rotate(-45deg)!important}
+.site-header.aliev-unified-nav .mobile-nav {
+  display:block!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;
+  width:100%!important;max-width:none!important;height:auto!important;
+  padding:16px 24px 26px!important;margin:0!important;
+  background:#f5f1eb!important;color:#052b3d!important;
+  border:0!important;border-bottom:1px solid #d8c6a8!important;
+  border-radius:0!important;box-shadow:0 16px 24px rgba(5,43,61,.08)!important;
+  overflow-y:auto!important;max-height:calc(100dvh - 75px)!important;
+  z-index:3001!important;transform:none!important;
+}
+.site-header.aliev-unified-nav .mobile-nav[hidden] {display:none!important}
+.site-header.aliev-unified-nav .mobile-nav a {
+  display:flex!important;align-items:center!important;justify-content:space-between!important;
+  gap:14px!important;padding:13px 0!important;margin:0!important;
+  background:transparent!important;border:0!important;border-bottom:1px solid #dfd7cc!important;
+  font:400 15px/1.65 Arial,Helvetica,sans-serif!important;
+  color:#052b3d!important;letter-spacing:normal!important;text-transform:none!important;
+  text-align:left!important;text-decoration:none!important;white-space:normal!important;
+}
+.site-header.aliev-unified-nav .mobile-nav a.active {
+  color:#926323!important;font-weight:700!important;border-bottom-color:#bd8a3e!important;
+}
+.site-header.aliev-unified-nav .mobile-nav a:last-child {color:#926323!important;font-weight:600!important}
+.site-header.aliev-unified-nav .mobile-nav a .aliev-svg-arrow {
+  display:block!important;flex:0 0 18px!important;width:18px!important;height:18px!important;
+  fill:none!important;stroke:#bd8a3e!important;stroke-width:1.7!important;
+  stroke-linecap:round!important;stroke-linejoin:round!important;
+}
+.site-header.aliev-unified-nav a:focus-visible,
+.site-header.aliev-unified-nav button:focus-visible {outline:2px solid #bd8a3e!important;outline-offset:3px!important}
+/* SVG arrows in footer links, never an emoji or text glyph. */
+.aliev-footer-redesign a.aliev-footer-text-link,
+.aliev-footer-redesign a.aliev-footer-cta {
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;
+}
+.aliev-footer-redesign a.aliev-footer-text-link {justify-content:flex-start!important}
+.aliev-footer-redesign a .aliev-svg-arrow {
+  width:17px!important;height:17px!important;flex:0 0 17px!important;
+  fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;
+  stroke-linecap:round!important;stroke-linejoin:round!important;
+  display:block!important;transition:transform .2s ease!important;
+}
+.aliev-footer-redesign a:hover .aliev-svg-arrow {transform:translate(2px,-2px)!important}
+@media (max-width:1190px) {
+  .site-header.aliev-unified-nav .header-inner {width:calc(100% - 56px)!important;gap:22px!important}
+  .site-header.aliev-unified-nav .desktop-nav {gap:19px!important}
+  .site-header.aliev-unified-nav .desktop-nav a {font-size:10px!important}
+  .site-header.aliev-unified-nav .brand img.brand-mark {width:51px!important;height:39px!important;max-width:51px!important;flex-basis:51px!important}
+  .site-header.aliev-unified-nav .brand-wordmark strong {font-size:25px!important}
+  .site-header.aliev-unified-nav .brand-wordmark>span {font-size:7px!important}
+  .site-header.aliev-unified-nav .header-cta {font-size:10px!important;padding:10px 12px!important}
+  .site-header.aliev-unified-nav .header-cta svg {display:none!important}
+}
+@media(max-width:980px) {
+  .site-header.aliev-unified-nav {height:82px!important}
+  .site-header.aliev-unified-nav .desktop-nav {display:none!important}
+  .site-header.aliev-unified-nav .header-inner {width:calc(100% - 56px)!important}
+  .site-header.aliev-unified-nav .header-cta {margin-left:auto!important;font-size:12px!important}
+  .site-header.aliev-unified-nav .menu-toggle {display:block!important}
+}
+@media(max-width:700px) {
+  .site-header.aliev-unified-nav {height:75px!important}
+  .site-header.aliev-unified-nav .header-inner {width:calc(100% - 36px)!important;gap:12px!important}
+  .site-header.aliev-unified-nav .brand {gap:9px!important}
+  .site-header.aliev-unified-nav .brand img.brand-mark {width:45px!important;height:35px!important;max-width:45px!important;flex-basis:45px!important}
+  .site-header.aliev-unified-nav .brand-wordmark {padding-left:9px!important}
+  .site-header.aliev-unified-nav .brand-wordmark strong {font-size:22px!important;letter-spacing:2px!important}
+  .site-header.aliev-unified-nav .brand-wordmark>span {font-size:6px!important;letter-spacing:1.1px!important;margin-top:4px!important}
+  .site-header.aliev-unified-nav .header-cta {font-size:10px!important;padding:10px!important;min-height:36px!important}
+  .site-header.aliev-unified-nav .menu-toggle {width:34px!important;height:44px!important;padding:6px!important;margin-right:-5px!important}
+}
+@media(max-width:360px) {
+  .site-header.aliev-unified-nav .header-cta {display:none!important}
+  .site-header.aliev-unified-nav .menu-toggle {margin-left:auto!important}
+}
+@media(prefers-reduced-motion:reduce) {
+  .site-header.aliev-unified-nav *, .site-header.aliev-unified-nav *::after,
+  .aliev-footer-redesign a .aliev-svg-arrow {transition:none!important}
+}
+
+
+/* 2026-11: robust, compact mobile menu, built to survive the older service styles. */
+@media (max-width:980px) {
+  .site-header.aliev-unified-nav .mobile-nav {
+    box-sizing:border-box!important;
+    max-height:calc(100dvh - 75px)!important;
+    overflow-x:hidden!important;overflow-y:auto!important;
+    overscroll-behavior:contain!important;
+    padding:12px 22px 20px!important;
+    background:#f8f5ef!important;
+    box-shadow:0 16px 36px rgba(5,43,61,.12)!important;
+  }
+  .site-header.aliev-unified-nav .mobile-nav a {
+    box-sizing:border-box!important;
+    min-height:52px!important;height:auto!important;
+    line-height:1.35!important;
+    padding:15px 3px!important;
+    overflow:visible!important;
+    min-width:0!important;max-width:100%!important;
+    text-decoration:none!important;
+  }
+  .site-header.aliev-unified-nav .mobile-nav a:last-child {
+    min-height:52px!important;
+    margin:16px 0 0!important;padding:13px 15px!important;
+    border:1px solid rgba(170,125,63,.45)!important;
+    border-radius:7px!important;background:#fffdfa!important;
+    color:#936422!important;font-size:14px!important;
+    font-weight:700!important;white-space:nowrap!important;
+    display:flex!important;align-items:center!important;justify-content:space-between!important;
+  }
+  .site-header.aliev-unified-nav .mobile-nav a:last-child:focus-visible,
+  .site-header.aliev-unified-nav .mobile-nav a:last-child:hover {
+    background:#f3eadb!important;
+  }
+  .site-header.aliev-unified-nav .mobile-nav a .aliev-svg-arrow {
+    box-sizing:content-box!important;
+    width:18px!important;height:18px!important;min-width:18px!important;
+    min-height:18px!important;max-width:18px!important;max-height:18px!important;
+    flex:0 0 18px!important;display:block!important;
+    margin:0!important;padding:0!important;
+    fill:none!important;stroke:#936422!important;stroke-width:1.8!important;
+    stroke-linecap:round!important;stroke-linejoin:round!important;
+    transform:none!important;object-fit:contain!important;
+    position:static!important;overflow:visible!important;
+  }
+  .site-header.aliev-unified-nav .mobile-nav a .aliev-svg-arrow path {
+    fill:none!important;stroke:#936422!important;stroke-width:1.8!important;
+    stroke-linecap:round!important;stroke-linejoin:round!important;
+  }
+}
+@media (max-width:380px) {
+  .site-header.aliev-unified-nav .mobile-nav {padding-inline:16px!important;}
+  .site-header.aliev-unified-nav .mobile-nav a:last-child {font-size:13px!important;}
+}
+/* Prevent footer SVGs from inheriting huge dimensions or filled triangles. */
+.aliev-footer-redesign .aliev-svg-arrow {
+  width:18px!important;height:18px!important;min-width:18px!important;
+  min-height:18px!important;max-width:18px!important;max-height:18px!important;
+  flex:0 0 18px!important;fill:none!important;stroke:currentColor!important;
+  stroke-width:1.8!important;stroke-linecap:round!important;stroke-linejoin:round!important;
+  transform:none;display:inline-block!important;
+}
+.aliev-footer-redesign .aliev-svg-arrow path {fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;}
