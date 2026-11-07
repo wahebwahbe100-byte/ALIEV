@@ -1,0 +1,42 @@
+UNSERE LEISTUNGEN — Realfoto-Auswahl ohne Personen (06.11.2026)
+
+Die sechs Karten im tatsächlich sichtbaren Karussell (Abschnitt #leistungen) und die ersten sechs Karten in #objekttypen wurden auf reale Stockfotos umgestellt. Keine generierten Bilder werden in diesen Karten benutzt.
+Für Online-Quellen auf Pexels werden die offiziellen Bild-CDN-Dateien geladen. Fällt das Netzwerk aus, zeigen die Karten echte fotografische, lokal mitgelieferte Ersatzbilder. Für Unsplash-Motive wurden bereits lizenzierte Originalaufnahmen verwendet, die zuvor zum Projekt gehörten.
+
+Externe Nutzung: https://www.pexels.com/license/ und https://unsplash.com/license
+
+Privat- & Firmenumzüge:
+  Hauptfoto: https://www.pexels.com/photo/pile-of-cardboard-boxes-scattered-on-floor-during-relocation-7203788/
+  Lokaler Fallback: assets/transport-real-stock/umzuege.webp
+  Fallback-Quelle: https://unsplash.com/photos/a-room-with-boxes-and-a-window-bV7WI-AeiTA
+  Fotograf der Fallback-Aufnahme: Alicia Christin Gerald
+
+Möbel- & Gütertransport:
+  Hauptfoto: https://www.pexels.com/photo/packed-boxes-and-piece-of-furniture-in-new-house-room-4246098/
+  Lokaler Fallback: assets/transport-real-stock/moebeltransport.webp
+  Fallback-Quelle: https://pexels.com/photo/close-up-shot-of-men-carrying-a-couch-7464662/
+  Fotograf der Fallback-Aufnahme: RDNE Stock project
+
+Kurier- & Direktfahrten:
+  Hauptfoto: https://unsplash.com/photos/cardboard-shipping-boxes-in-delivery-van-q8kR_ie6WnI
+  Lokaler Fallback: assets/transport-real-stock/kurierfahrten.webp
+  Fallback-Quelle: https://unsplash.com/photos/cardboard-shipping-boxes-in-delivery-van-q8kR_ie6WnI
+  Fotograf der Fallback-Aufnahme: Claudio Schwarz
+
+Verpackungsservice:
+  Hauptfoto: https://www.pexels.com/photo/box-with-objects-wrapped-in-brown-paper-for-moving-4246242/
+  Lokaler Fallback: assets/transport-real-stock/verpackungsservice.webp
+  Fallback-Quelle: https://unsplash.com/photos/a-warehouse-filled-with-lots-of-boxes-and-pallets-28b8xlTT5t4
+  Fotograf der Fallback-Aufnahme: Ashley
+
+Möbelmontage:
+  Hauptfoto: https://www.pexels.com/photo/hammer-screwdrivers-and-furniture-assembly-instructions-5805494/
+  Lokaler Fallback: assets/transport-real-stock/moebelmontage.webp
+  Fallback-Quelle: https://pexels.com/photo/unrecognizable-man-hands-assembling-baby-cot-5217124/
+  Fotograf der Fallback-Aufnahme: Yan Krukau
+
+Entrümpelung & Entsorgung:
+  Hauptfoto: https://www.pexels.com/photo/boxes-used-for-segregating-things-at-home-8581413/
+  Lokaler Fallback: assets/transport-real-stock/entruempelung.webp
+  Fallback-Quelle: https://pexels.com/photo/boxes-used-for-segregating-things-at-home-8581413/
+  Fotograf der Fallback-Aufnahme: RDNE Stock project

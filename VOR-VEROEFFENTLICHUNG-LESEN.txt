@@ -1,0 +1,14 @@
+ALIEV – Hinweise vor der Veröffentlichung der Rechtstexte
+
+Die beiden Seiten Impressum und Datenschutz sind anhand des aktuellen Website-Codes erstellt. Sie sind nicht vollständig, solange die nachfolgend genannten Angaben fehlen. Dies ist keine anwaltliche Rechtsprüfung.
+
+1. Vollständiger bürgerlicher Name des Websitebetreibers / vollständige Firmierung und Rechtsform sowie ggf. Vertretungsberechtigte eintragen.
+2. Geschäftliche E-Mail-Adresse und Telefonnummer verifizieren und ergänzen.
+3. Adresse Pferdskopfweg 15, 65931 Frankfurt am Main als tatsächliche ladungsfähige Geschäftsanschrift bestätigen.
+4. Soweit vorhanden: Registerdaten, USt-IdNr. oder Wirtschafts-Identifikationsnummer und ggf. Aufsichtsbehörde ergänzen.
+5. Hosting-Dienstleister, tatsächliche Server-Log-Speicherdauer und E-Mail-Dienstleister eintragen, ggf. AV-Vertrag prüfen.
+6. Extern eingebundene Google Fonts und Pexels-Bilder überprüfen; lokales Hosting wird für mehr Datenschutz empfohlen.
+7. Wenn zukünftig Tracking, Analytics, Werbung, Chat, Maps, Videos oder nicht notwendige Cookies eingebunden werden, müssen Datenschutzhinweise sowie Einwilligungsmanagement neu geprüft und ggf. erweitert werden.
+8. Alle Platzhalter vor dem Livegang ersetzen; alle Seiten mit dem tatsächlichen Domain-/Hosting-Setup nochmals prüfen.
+
+Die Cookie-Information auf dieser Website ist bewusst kein Einwilligungsbanner für Tracking, da im geprüften Stand keine optionalen Analyse-/Marketing-Cookies integriert sind.

@@ -1,0 +1,120 @@
+ALIEV — Bildnachweise zur Transport-Leistungsgalerie
+Stand: 6. November 2026
+
+Lizenz: https://www.pexels.com/license/
+Verwendung: illustrative Stockfotos. Keine Abbildungen tatsächlicher ALIEV-Aufträge oder Mitarbeitender.
+Die Fotoinhalte und Farben wurden nicht verändert. Es wurden WebP-Dateien in zwei Auflösungen erstellt; der sichtbare Ausschnitt wird im Website-Layout festgelegt.
+
+umzuege
+https://www.pexels.com/photo/delivery-man-pushing-a-trolley-with-carton-boxes-6169675/
+Fotograf: Tima Miroshnichenko
+Datei: assets/transport-photos/umzug-6169675.webp
+SHA-256: 07926ba78cd387ee1066ebb6d13ab7aeb0329dc94532d440309fcb05b8b26d0a
+
+moebeltransport
+https://www.pexels.com/photo/close-up-shot-of-men-carrying-a-couch-7464662/
+Fotograf: RDNE Stock project
+Datei: assets/transport-photos/moebeltransport-7464662.webp
+SHA-256: 79dfe822aa81d916f28465513e77e194410372f3e07250346437cf3cd8056ad1
+
+kurierfahrten
+https://www.pexels.com/photo/a-deliveryman-holding-a-cardboard-box-6699405/
+Fotograf: Gustavo Fring
+Datei: assets/transport-photos/kurierfahrt-6699405.webp
+SHA-256: 0e8f9d54aa72be0dfbc24b1a9208aaa48872ddc2ab59003f01cdf3f557dcbfde
+
+verpackungsservice
+https://www.pexels.com/photo/pleasant-woman-preparing-stuff-for-moving-4247756/
+Fotograf: Ketut Subiyanto
+Datei: assets/transport-photos/verpackung-4247756.webp
+SHA-256: f7cec158d6f28825a75c5b9b8ef0509d010782dc7c08b4afe34276643d78244f
+
+moebelmontage
+https://www.pexels.com/photo/unrecognizable-man-hands-assembling-baby-cot-5217124/
+Fotograf: Yan Krukau
+Datei: assets/transport-photos/moebelmontage-5217124.webp
+SHA-256: 1ebef2e70c232e86dcac7fdb215a5994984e11f4a7035b1a53df26ac0540442d
+
+entruempelung
+https://www.pexels.com/photo/boxes-used-for-segregating-things-at-home-8581413/
+Fotograf: RDNE Stock project
+Datei: assets/transport-photos/entruempelung-8581413.webp
+SHA-256: ab277ac25364dc24fee2c060d5dd2939a72bfb3c87008415af50d353adaf3f15
+
+
+Zehn zusätzliche Transportleistungen — 6. November 2026
+Quelle: Unsplash | Lizenz: https://unsplash.com/license
+Alle zehn neu hinzugefügten Motive sind Fotografien aus dem Internet. Keine KI-generierten Bilder wurden hinzugefügt.
+Illustrative Motive; keine Abbildungen tatsächlicher ALIEV-Aufträge oder Mitarbeitender.
+Die Fotos wurden nur für das Web skaliert und als WebP gespeichert. Der sichtbare Ausschnitt wird im Layout festgelegt.
+
+Büroumzüge
+https://unsplash.com/photos/woman-carrying-box-of-belongings-leaving-office-u6pzdg6fWLI
+Fotograf: Vitaly Gariev
+Datei: assets/transport-additional/bueroumzuege.webp
+SHA-256: 11981db3a61f684bbe606d76d9c525e8059f1d924fce82c7e6a3711579c59ec9
+
+Seniorenumzüge
+https://unsplash.com/photos/a-room-with-boxes-and-a-window-bV7WI-AeiTA
+Fotograf: Alicia Christin Gerald
+Datei: assets/transport-additional/seniorenumzuege.webp
+SHA-256: d3c694bc10548ec0ab289be3f3b54aa95b78d0261c93e1d1e0e3273d693aebc4
+
+Studentenumzüge
+https://unsplash.com/photos/laughing-woman-with-cardboard-moving-boxes-PfGs06UwMgc
+Fotograf: Cabri Caldwell
+Datei: assets/transport-additional/studentenumzuege.webp
+SHA-256: 008d0474990627423b05a50842f1aefc42ed0b78cd657539ff2514d89d08953c
+
+Fernumzüge
+https://unsplash.com/photos/white-freight-truck-on-road-during-daytime-EmEQ6kK_5P0
+Fotograf: Caleb Ruiter
+Datei: assets/transport-additional/fernumzuege.webp
+SHA-256: a02f6065b760cbb6a257d6da35f5f7c8c3eece21bbfa92d8a1de133b5df3f8d3
+
+Kleintransporte
+https://unsplash.com/photos/cardboard-shipping-boxes-in-delivery-van-q8kR_ie6WnI
+Fotograf: Claudio Schwarz
+Datei: assets/transport-additional/kleintransporte.webp
+SHA-256: e4d3dff2ec3cf2a9e96197ee5fda5496184b0a38f2589cd30b439cf1b15c0e07
+
+Möbelabholung
+https://unsplash.com/photos/a-man-unloading-furniture-from-the-back-of-a-moving-truck-rEqEQK_DFJE
+Fotograf: Egor Ivlev
+Datei: assets/transport-additional/moebelabholung.webp
+SHA-256: 9d8b9d7f4d4b7665239b9ca3b17c1149bc30e78557b67f586e0049dcce50a397
+
+Gerätetransport
+https://unsplash.com/photos/row-of-washing-machines-in-a-brightly-lit-laundromat-GcB7eqnXnwI
+Fotograf: Chris Weiher
+Datei: assets/transport-additional/geraetetransport.webp
+SHA-256: 0ff35033b41f5f2c812122214fec3fa723393fd99cb30d2f9985137c377efde5
+
+Be- & Entladeservice
+https://unsplash.com/photos/a-man-loading-boxes-into-the-back-of-a-moving-truck-ctXcNX1b4Oo
+Fotograf: Luke Miller
+Datei: assets/transport-additional/be-entladeservice.webp
+SHA-256: 489d7b67ad1bd62939dc724658f533189afb772f90639312e9ade6a97e7c8c81
+
+Lagertransporte
+https://unsplash.com/photos/a-warehouse-filled-with-lots-of-boxes-and-pallets-28b8xlTT5t4
+Fotograf: Ashley
+Datei: assets/transport-additional/lagertransporte.webp
+SHA-256: 6db6602767b06995e12d23511c6e9a205292799fa8b6069c7715662f0ed7b793
+
+Messetransporte
+https://unsplash.com/photos/busy-exhibition-hall-with-many-booths-and-attendees-KVvEpFVq_-U
+Fotograf: Euronewsweek Media
+Datei: assets/transport-additional/messetransporte.webp
+SHA-256: 5f0fb68e138040f8062b21d78e34e6430ada16cdfadb876a3ed0802475c86d0e
+
+
+UNSERE LEISTUNGEN — Transport-Galerie (Fotoaktualisierung, 6. November 2026)
+Die sechs illustrierten Originalbilder in der Galerie transport.html wurden gegen echte Pexels-Fotografien aus den bereits enthaltenen, dokumentierten Transportfotos ausgetauscht. Die Einzelquellen und Fotografen stehen oben. Die Pexels-Bilder sind illustrative Stockfotos und zeigen keine ALIEV-Mitarbeiter oder realen ALIEV-Aufträge.
+Für jede Karte werden 1000px- und 2000px-WebP-Dateien über srcset verwendet. Bildausschnitte wurden mit object-position optimiert.
+- moving.webp -> assets/transport-photos/umzug-6169675.webp (1000/2000)
+- furniture.webp -> assets/transport-photos/moebeltransport-7464662.webp (1000/2000)
+- courier.webp -> assets/transport-photos/kurierfahrt-6699405.webp (1000/2000)
+- packing.webp -> assets/transport-photos/verpackung-4247756.webp (1000/2000)
+- assembly.webp -> assets/transport-photos/moebelmontage-5217124.webp (1000/2000)
+- clearance.webp -> assets/transport-photos/entruempelung-8581413.webp (1000/2000)
