@@ -938,5 +938,50 @@ section.hero::after{height:20px!important}
 </nav>
     </div>
   </div>
-</footer><script src="../assets/aliev-index-header-match.js?v=9" defer></script>
+</footer><script id="aliev-mobile-menu-controller">
+/* Works standalone on every non-home page, independent of external JS. */
+(() => {
+  'use strict';
+  const header = document.querySelector('header.site-header.aliev-unified-nav');
+  if (!header) return;
+  const toggle = header.querySelector('button.menu-toggle');
+  const menu = header.querySelector('nav.mobile-nav#mobile-nav');
+  if (!toggle || !menu || toggle.dataset.alievMobileBound === 'true') return;
+  toggle.dataset.alievMobileBound = 'true';
+
+  const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    document.body.classList.toggle('menu-open', open);
+  };
+  setOpen(false);
+
+  toggle.addEventListener('click', event => {
+    event.preventDefault();
+    // Legacy page handlers must not also toggle the same menu.
+    event.stopImmediatePropagation();
+    setOpen(!isOpen());
+  }, true);
+  menu.addEventListener('click', event => {
+    if (event.target.closest('a')) setOpen(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || !isOpen()) return;
+    setOpen(false);
+    toggle.focus();
+  });
+  document.addEventListener('pointerdown', event => {
+    if (isOpen() && !header.contains(event.target)) setOpen(false);
+  });
+  const desktop = window.matchMedia('(min-width: 981px)');
+  const onDesktopChange = event => { if (event.matches) setOpen(false); };
+  if (desktop.addEventListener) desktop.addEventListener('change', onDesktopChange);
+  else if (desktop.addListener) desktop.addListener(onDesktopChange);
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) setOpen(false);
+  });
+})();
+</script>
 </body></html>
