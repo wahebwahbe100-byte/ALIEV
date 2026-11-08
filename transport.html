@@ -7128,8 +7128,7 @@ body,button,input,select,textarea {font-family:Arial,Helvetica,sans-serif!import
 <link rel="stylesheet" href="assets/aliev-cookie-info.css">
 <script src="assets/aliev-cookie-info.js" defer></script>
 <link rel="stylesheet" href="assets/aliev-index-header-match.css">
-<script src="assets/aliev-index-header-match.js" defer></script>
-  <link rel="stylesheet" href="assets/aliev-shared-navigation.css?v=1">
+<link rel="stylesheet" href="assets/aliev-shared-navigation.css?v=3">
 </head>
 <body class="service-detail-page transport-page">
 <header class="site-header aliev-unified-nav" aria-label="Seitenkopf">
@@ -7150,7 +7149,7 @@ body,button,input,select,textarea {font-family:Arial,Helvetica,sans-serif!import
 <a class="active" aria-current="page" href="transport.html">Transport &amp; Umzug</a>
 <a href="gebaeudereinigung.html">Reinigung &amp; Pflege</a>
 <a href="index.html#ueber-uns">Über uns</a>
-<a href="kontakt.html#kontakt">Angebot anfragen <svg class="aliev-svg-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12"/></svg></a></nav>
+<a href="kontakt.html#kontakt">Angebot anfragen <svg class="aliev-svg-arrow" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block!important;width:18px!important;height:18px!important;min-width:18px!important;max-width:18px!important;flex:0 0 18px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;vertical-align:middle!important;transform:none!important"><path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></nav>
 </header>
 <main>
 <section class="aliev-text-hero" id="start" aria-labelledby="transport-hero-title">
@@ -7317,7 +7316,7 @@ body,button,input,select,textarea {font-family:Arial,Helvetica,sans-serif!import
           <span class="aliev-footer-brand-text"><strong>ALIEV</strong><small>LOGISTICS &amp; SERVICES</small></span>
         </a>
         <p>Transport, Umzug und Gebäudereinigung – mit klarer Planung, persönlicher Abstimmung und Sorgfalt im Detail.</p>
-        <a class="aliev-footer-text-link" href="index.html#ueber-uns">Mehr über ALIEV <svg class="aliev-svg-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12"/></svg></a>
+        <a class="aliev-footer-text-link" href="index.html#ueber-uns">Mehr über ALIEV <svg class="aliev-svg-arrow" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block!important;width:18px!important;height:18px!important;min-width:18px!important;max-width:18px!important;flex:0 0 18px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;vertical-align:middle!important;transform:none!important"><path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
       <nav class="aliev-footer-column aliev-footer-links" aria-label="Unternehmenslinks">
         <h2>Unternehmen</h2>
@@ -7336,7 +7335,7 @@ body,button,input,select,textarea {font-family:Arial,Helvetica,sans-serif!import
       <div class="aliev-footer-contact">
         <h2>Ihr Vorhaben</h2>
         <p>Sie planen einen Transport, Umzug oder eine Reinigung? Erzählen Sie uns, was Sie benötigen. Wir beraten Sie persönlich.</p>
-        <a class="aliev-footer-cta" href="kontakt.html#kontakt">Angebot anfragen <svg class="aliev-svg-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 19 19 5M7 5h12v12"/></svg></a>
+        <a class="aliev-footer-cta" href="kontakt.html#kontakt">Angebot anfragen <svg class="aliev-svg-arrow" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block!important;width:18px!important;height:18px!important;min-width:18px!important;max-width:18px!important;flex:0 0 18px!important;fill:none!important;stroke:currentColor!important;stroke-width:1.8!important;vertical-align:middle!important;transform:none!important"><path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
     <div class="aliev-footer-bottom">
@@ -7368,5 +7367,51 @@ body,button,input,select,textarea {font-family:Arial,Helvetica,sans-serif!import
 
 
 
+<script id="aliev-mobile-menu-controller">
+/* Works standalone on every non-home page, independent of external JS. */
+(() => {
+  'use strict';
+  const header = document.querySelector('header.site-header.aliev-unified-nav');
+  if (!header) return;
+  const toggle = header.querySelector('button.menu-toggle');
+  const menu = header.querySelector('nav.mobile-nav#mobile-nav');
+  if (!toggle || !menu || toggle.dataset.alievMobileBound === 'true') return;
+  toggle.dataset.alievMobileBound = 'true';
+
+  const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    document.body.classList.toggle('menu-open', open);
+  };
+  setOpen(false);
+
+  toggle.addEventListener('click', event => {
+    event.preventDefault();
+    // Legacy page handlers must not also toggle the same menu.
+    event.stopImmediatePropagation();
+    setOpen(!isOpen());
+  }, true);
+  menu.addEventListener('click', event => {
+    if (event.target.closest('a')) setOpen(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || !isOpen()) return;
+    setOpen(false);
+    toggle.focus();
+  });
+  document.addEventListener('pointerdown', event => {
+    if (isOpen() && !header.contains(event.target)) setOpen(false);
+  });
+  const desktop = window.matchMedia('(min-width: 981px)');
+  const onDesktopChange = event => { if (event.matches) setOpen(false); };
+  if (desktop.addEventListener) desktop.addEventListener('change', onDesktopChange);
+  else if (desktop.addListener) desktop.addListener(onDesktopChange);
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) setOpen(false);
+  });
+})();
+</script>
 </body>
 </html>
