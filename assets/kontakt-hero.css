@@ -1,14 +1,14 @@
 /* Kontakt hero picture: preserve all original dimensions, typography and spacing. */
 .page-contact .contact-page-intro {
   background-color: #f5f1eb;
-  background-image: linear-gradient(90deg, rgba(247,243,236,.89) 0%, rgba(247,243,236,.84) 34%, rgba(247,243,236,.67) 53%, rgba(247,243,236,.07) 73%, rgba(247,243,236,0) 100%), url("kontakt-hero-terrasse.png");
+  background-image: linear-gradient(90deg, rgba(247,243,236,.89) 0%, rgba(247,243,236,.84) 34%, rgba(247,243,236,.67) 53%, rgba(247,243,236,.07) 73%, rgba(247,243,236,0) 100%), url("kontakt-hero-terrasse.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 @media (max-width: 700px) {
   .page-contact .contact-page-intro {
-    background-image: linear-gradient(180deg, rgba(249,246,241,.92) 0%, rgba(249,246,241,.87) 58%, rgba(249,246,241,.65) 100%), url("kontakt-hero-terrasse.png");
+    background-image: linear-gradient(180deg, rgba(249,246,241,.92) 0%, rgba(249,246,241,.87) 58%, rgba(249,246,241,.65) 100%), url("kontakt-hero-terrasse.webp");
     background-position: 70% center;
   }
 }

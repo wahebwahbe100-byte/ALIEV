@@ -36,3 +36,11 @@ html {scroll-behavior:smooth} body.page-legal {background:#f9f8f5;color:#18313d}
 .page-legal .mobile-nav[hidden] {display:none!important}
 @media(max-width:850px){.page-legal .legal-layout {grid-template-columns:1fr}.page-legal .legal-aside{position:static;order:-1;display:flex;gap:8px;flex-wrap:wrap;padding:17px}.page-legal .legal-aside p {width:100%;margin-bottom:5px}.page-legal .legal-aside a {border:1px solid #eee8df;border-radius:20px;padding:7px 12px}} 
 @media(max-width:500px){.page-legal .legal-shell{width:calc(100% - 30px)}.page-legal .legal-hero{padding:45px 0 48px}.page-legal .legal-hero h1{font-size:50px}.page-legal .legal-main{padding-top:32px}.page-legal .legal-section{padding:22px 20px;border-radius:15px}.page-legal .legal-section h2{font-size:27px}}
+
+/* Legal pages use the same fixed header as the site's service pages.
+   Reserve its actual height so the legal hero never sits under the navbar. */
+.page-legal main {padding-top:94px;}
+@media(max-width:980px){.page-legal main{padding-top:82px;}}
+@media(max-width:700px){.page-legal main{padding-top:75px;}}
+/* Footer is the same full ALIEV footer used on the homepage. */
+.page-legal .aliev-footer-redesign {clear:both;}
