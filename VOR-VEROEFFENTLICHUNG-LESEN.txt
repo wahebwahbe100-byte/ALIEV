@@ -1,14 +1,15 @@
-ALIEV – Hinweise vor der Veröffentlichung der Rechtstexte
+ALIEV – Vor Veröffentlichung prüfen (Stand: 10.11.2026)
 
-Die beiden Seiten Impressum und Datenschutz sind anhand des aktuellen Website-Codes erstellt. Sie sind nicht vollständig, solange die nachfolgend genannten Angaben fehlen. Dies ist keine anwaltliche Rechtsprüfung.
+Neu hinzugefügt: impressum.html und datenschutz.html; Name Ali Aliev im site-config.js und in beiden Seiten.
 
-1. Vollständiger bürgerlicher Name des Websitebetreibers / vollständige Firmierung und Rechtsform sowie ggf. Vertretungsberechtigte eintragen.
-2. Geschäftliche E-Mail-Adresse und Telefonnummer verifizieren und ergänzen.
-3. Adresse Pferdskopfweg 15, 65931 Frankfurt am Main als tatsächliche ladungsfähige Geschäftsanschrift bestätigen.
-4. Soweit vorhanden: Registerdaten, USt-IdNr. oder Wirtschafts-Identifikationsnummer und ggf. Aufsichtsbehörde ergänzen.
-5. Hosting-Dienstleister, tatsächliche Server-Log-Speicherdauer und E-Mail-Dienstleister eintragen, ggf. AV-Vertrag prüfen.
-6. Extern eingebundene Google Fonts und Pexels-Bilder überprüfen; lokales Hosting wird für mehr Datenschutz empfohlen.
-7. Wenn zukünftig Tracking, Analytics, Werbung, Chat, Maps, Videos oder nicht notwendige Cookies eingebunden werden, müssen Datenschutzhinweise sowie Einwilligungsmanagement neu geprüft und ggf. erweitert werden.
-8. Alle Platzhalter vor dem Livegang ersetzen; alle Seiten mit dem tatsächlichen Domain-/Hosting-Setup nochmals prüfen.
+WICHTIG: Die Zahl 014 801 81107 aus dem zugesandten Bild wirkt wie eine allgemeine Steuernummer, nicht wie eine USt-IdNr. Sie wurde aus Schutzgründen NICHT öffentlich eingebaut. Eine USt-IdNr. oder W-IdNr. (falls zugeteilt) muss separat geprüft und in das Impressum aufgenommen werden.
 
-Die Cookie-Information auf dieser Website ist bewusst kein Einwilligungsbanner für Tracking, da im geprüften Stand keine optionalen Analyse-/Marketing-Cookies integriert sind.
+VOR dem Livegang:
+1. Verifizieren, dass Ali Aliev der tatsächliche Betreiber ist und die angegebene Adresse Pferdskopfweg 15, 65931 Frankfurt am Main ladungsfähig ist.
+2. E-Mail info@alievservices.de und Telefon 017681103416 wurden ergänzt; vor Veröffentlichung deren Erreichbarkeit prüfen. Das Anfrageformular öffnet nach Bestätigung das lokale E-Mail-Programm (kein serverseitiger Versand).
+3. Falls zugeteilt: echte USt-IdNr. oder W-IdNr. ergänzen. Keine normale Steuernummer öffentlich anzeigen.
+4. Rechtsform, mögliche Registereinträge und erlaubnispflichtige Tätigkeiten prüfen.
+5. IONOS SE wurde im Datenschutztext als Webhoster ergänzt. Vor Veröffentlichung prüfen, dass nicht nur die Domain bei IONOS registriert ist, sondern tatsächlich das IONOS-Produkt Webhosting genutzt wird. Die von IONOS genannten acht Wochen Speicherfrist sowie der konkrete Serverstandort hängen von Produkt/Vertrag ab und sollten abgeglichen werden.
+6. Google Fonts, externe Bildquellen/Pexels und deren datenschutzrechtliche Anforderungen prüfen.
+7. Bei aktiviertem Formularversand, Tracking oder anderen externen Funktionen Datenschutztext und Cookie-Management aktualisieren.
+8. Diese Texte sind eine technische Entwurfsfassung, keine abschließende rechtliche Prüfung.
